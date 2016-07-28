@@ -6,10 +6,12 @@
             android:id="@+id/mood"
             android:icon="@drawable/ic_mood"
             android:title="Mood" />
+
         <item
             android:id="@+id/weather"
             android:icon="@drawable/ic_weather"
             android:title="Weather" />
+
         <item
             android:id="@+id/genre"
             android:icon="@drawable/ic_genre"
@@ -18,19 +20,14 @@
             android:id="@+id/event"
             android:icon="@drawable/ic_event"
             android:title="Event" />
+
+        <item
+            android:id="@+id/nearby"
+            android:icon="@drawable/ic_nearby"
+            android:title="Cinema Nearby" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
     </group>
-
-    <item android:title="More">
-        <menu>
-            <item
-                android:id="@+id/nearby"
-                android:icon="@drawable/ic_nearby"
-                android:title="Cinema Nearby" />
-            <item
-                android:id="@+id/share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-        </menu>
-    </item>
-
 </menu>

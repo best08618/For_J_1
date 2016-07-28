@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.alab.for_j.MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:checked="false" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="0" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="0" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sad"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anger"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lonely"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivated"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/norbit_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/titanic" />
+
+                <TextView
+                    android:id="@+id/norbit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="Titanic, XXXX"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:id="@+id/norbit1_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/norbit_image"
+                    android:src="@drawable/titanic" />
+
+                <TextView
+                    android:id="@+id/norbit1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@+id/norbit_image"
+                    android:layout_toRightOf="@+id/norbit_image"
+                    android:gravity="center"
+                    android:text="Norbit, XXXX"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/norbit2_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/titanic" />
+
+                <TextView
+                    android:id="@+id/norbit2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="titanic, XXXX"
+                    android:textSize="24sp"
+                    android:layout_marginTop="200dp"/>
+
+
+                <ImageView
+                    android:id="@+id/norbit3_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/norbit2_image"
+                    android:src="@drawable/titanic" />
+
+                <TextView
+                    android:id="@+id/norbit3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/norbit2_image"
+                    android:gravity="center"
+                    android:text="titanic, XXXX"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/norbit4_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/c_norbit" />
+
+                <TextView
+                    android:id="@+id/norbit4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="Norbit, XXXX"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:id="@+id/norbit5_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/norbit4_image"
+                    android:src="@drawable/c_norbit" />
+
+                <TextView
+                    android:id="@+id/norbit5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/norbit4_image"
+                    android:gravity="center"
+                    android:text="Norbit, XXXX"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/norbit6_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/c_norbit" />
+
+                <TextView
+                    android:id="@+id/norbit6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="Norbit, XXXX"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:id="@+id/norbit7_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/norbit6_image"
+                    android:src="@drawable/c_norbit" />
+
+                <TextView
+                    android:id="@+id/norbit7_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/norbit6_image"
+                    android:gravity="center"
+                    android:text="Norbit, XXXX"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

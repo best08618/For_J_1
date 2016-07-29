@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -60,13 +59,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="Hot Movies"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
@@ -79,49 +79,57 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="1">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="219dp"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
-                    android:layout_weight="0.16"
+                    android:layout_margin="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/busan" />
 
                 <ImageView
                     android:layout_width="228dp"
                     android:layout_height="150dp"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/now_you_see_me" />
 
                 <ImageView
                     android:layout_width="271dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/finding_dorry" />
 
                 <ImageView
                     android:layout_width="232dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/seondal" />
 
                 <ImageView
                     android:layout_width="196dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/monster_watch" />
 
                 <ImageView
                     android:layout_width="394dp"
                     android:layout_height="150dp"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="2.18"
                     android:scaleType="fitStart"
                     android:src="@drawable/ice_age" />
@@ -129,87 +137,31 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/weather_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Weather"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="150dp"
-                android:src="@drawable/sun" />
-
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="219dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
-                        android:layout_weight="0.16"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/busan" />
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/hot_movie"
+                        android:layout_weight="1"/>
 
                     <ImageView
-                        android:layout_width="228dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="4dp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/now_you_see_me" />
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/top_movie" />
 
                     <ImageView
-                        android:layout_width="271dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="4dp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/finding_dorry" />
-
-                    <ImageView
-                        android:layout_width="232dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="4dp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/seondal" />
-
-                    <ImageView
-                        android:layout_width="196dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/monster_watch" />
-
-                    <ImageView
-                        android:layout_width="394dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="4dp"
-                        android:layout_weight="2.18"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/ice_age" />
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/location" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"

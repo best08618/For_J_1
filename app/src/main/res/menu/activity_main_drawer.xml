@@ -3,31 +3,32 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/mood"
-            android:icon="@drawable/ic_mood"
-            android:title="Mood" />
+            android:id="@+id/history"
+            android:icon="@drawable/history"
+            android:title="History" />
 
         <item
-            android:id="@+id/weather"
-            android:icon="@drawable/ic_weather"
-            android:title="Weather" />
+            android:id="@+id/bag"
+            android:icon="@drawable/favourite"
+            android:title="Shopping Bag" />
 
         <item
-            android:id="@+id/genre"
-            android:icon="@drawable/ic_genre"
-            android:title="Genre" />
+            android:id="@+id/reservation"
+            android:icon="@drawable/reservation"
+            android:title="Reservation Info." />
         <item
-            android:id="@+id/event"
+            android:id="@+id/point"
             android:icon="@drawable/ic_event"
-            android:title="Event" />
+            android:title="Bonus Point" />
 
         <item
-            android:id="@+id/nearby"
-            android:icon="@drawable/ic_nearby"
-            android:title="Cinema Nearby" />
+            android:id="@+id/liked_commented"
+            android:icon="@drawable/comment"
+            android:title="Commented Movies" />
+
         <item
-            android:id="@+id/share"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Share" />
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
     </group>
 </menu>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alab.for_j.MainActivity">
+    tools:context=".main2">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -18,7 +17,7 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:weightSum="1"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.example.alab.for_j.MainActivity"
+        tools:context=".main2"
         tools:showIn="@layout/app_bar_main">
 
 
@@ -31,14 +30,14 @@
                 android:id="@+id/radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="44dp"
                 android:checked="false" />
 
             <EditText
                 android:id="@+id/name_field"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="44dp"
                 android:layout_weight="1"
                 android:hint="Search"
                 android:inputType="textCapWords" />
@@ -46,13 +45,13 @@
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="44dp"
                 android:text="0" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="44dp"
                 android:text="0" />
 
 
@@ -63,11 +62,312 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hot Movies"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:text="This month"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="219dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/busan"
+                    android:onClick="busan"/>
+
+                <ImageView
+                    android:layout_width="228dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/now_you_see_me"
+                    android:onClick="now"/>
+
+                <ImageView
+                    android:layout_width="271dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/finding_dorry"
+                    android:onClick="dorry"/>
+
+                <ImageView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/seondal"
+                    android:onClick="bongi"/>
+
+                <ImageView
+                    android:layout_width="196dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/monster_watch"
+                    android:onClick="watch"/>
+
+                <ImageView
+                    android:layout_width="394dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2.18"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ice_age"
+                    android:onClick="ice"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/hot_movie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Movies"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="hot">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/top_movie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Hot pick"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="nearby">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nearby"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="mood">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/mood" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Mood"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="weather">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/weather_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Weather"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="genre">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/genre" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Genre"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp">
+
+            <ImageView
+                android:id="@+id/weather_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weather"
+                android:onClick="today_weather"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="190dp"
+                android:text="Good movies for \n rainy day"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28dp">
+
+            <ImageView
+                android:layout_width="219dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:src="@drawable/busan"
+                android:onClick="busan"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:layout_width="228dp"
+                android:layout_height="150dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/now_you_see_me"
+                android:onClick="now"/>
+
+            <ImageView
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:src="@drawable/finding_dorry"
+                android:onClick="dorry"/>
+
+            <ImageView
+                android:layout_width="232dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:src="@drawable/seondal"
+                android:onClick="bongi"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Coming Soon"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -91,230 +391,45 @@
                 <ImageView
                     android:layout_width="228dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/now_you_see_me" />
 
                 <ImageView
                     android:layout_width="271dp"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/finding_dorry" />
 
                 <ImageView
                     android:layout_width="232dp"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
                     android:scaleType="fitStart"
                     android:src="@drawable/seondal" />
 
                 <ImageView
                     android:layout_width="196dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/monster_watch" />
 
                 <ImageView
                     android:layout_width="394dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_weight="2.18"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/ice_age" />
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/hot_movie"
-                        android:layout_weight="1"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/top_movie" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/location" />
-
-                </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp">
-
-            <TextView
-                android:id="@+id/mood_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mood"
-                android:textSize="24sp" />
-        </RelativeLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <HorizontalScrollView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_width="219dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="4dp"
-                            android:layout_weight="0.16"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/busan" />
-
-                        <ImageView
-                            android:layout_width="228dp"
-                            android:layout_height="150dp"
-                            android:layout_margin="4dp"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/now_you_see_me" />
-
-                        <ImageView
-                            android:layout_width="271dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="4dp"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/finding_dorry" />
-
-                        <ImageView
-                            android:layout_width="232dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="4dp"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/seondal" />
-
-                        <ImageView
-                            android:layout_width="196dp"
-                            android:layout_height="150dp"
-                            android:layout_marginTop="4dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/monster_watch" />
-
-                        <ImageView
-                            android:layout_width="394dp"
-                            android:layout_height="150dp"
-                            android:layout_margin="4dp"
-                            android:layout_weight="2.18"
-                            android:scaleType="fitStart"
-                            android:src="@drawable/ice_age" />
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/smiley"
-                    android:scaleType="fitCenter"
-                    android:layout_weight="0.09" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Coming soon"
-                android:textSize="24sp" />
-        </LinearLayout>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="219dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
-                    android:layout_weight="0.16"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/busan" />
-
-                <ImageView
-                    android:layout_width="228dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="4dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/now_you_see_me" />
-
-                <ImageView
-                    android:layout_width="271dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="4dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/finding_dorry" />
-
-                <ImageView
-                    android:layout_width="232dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="4dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/seondal" />
-
-                <ImageView
-                    android:layout_width="196dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="4dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/monster_watch" />
-
-                <ImageView
-                    android:layout_width="394dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="20dp"
                     android:layout_weight="2.18"
                     android:scaleType="fitStart"
                     android:src="@drawable/ice_age" />

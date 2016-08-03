@@ -2,8 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFB300"
+    android:background="#FFB582"
     >
+
 
     <LinearLayout
         android:layout_margin="8dp"
@@ -11,256 +12,333 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@android:color/white">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
+            <ImageButton
+                android:id="@+id/expanded_menu_button"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FAFAFA"
+                android:src="@drawable/menu"
+                />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
                 android:layout_weight="1"
+                android:hint="SEARCH MOVIE"
+                android:inputType="textCapWords" />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:background="#FAFAFA"
+                android:src="@drawable/search"
+                />
+
+            <ImageButton
+                android:id="@+id/store_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:background="#FAFAFA"
+                android:src="@drawable/shopping_bag"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="8dip"
+            android:background="#FFB582" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
                 android:background="@android:color/white">
+
+                <ImageView
+                   android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mypage1"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
                 <TextView
-                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Forrest Gump"
-                    android:textSize="37sp"
-                    android:layout_above="@+id/textView3"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:textColor="#D9916A"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016 | DRAMA,COMEDY"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tom Hanks, Kurt Russell, Sally Field"
-                    android:textSize="13sp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignRight="@+id/textView4"
-                    android:layout_alignEnd="@+id/textView4"
-                    android:layout_marginBottom="56dp" />
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/mypage1"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignBottom="@+id/textView3"
-                    android:layout_toLeftOf="@+id/textView4"
-                    android:layout_toStartOf="@+id/textView4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robert Zemeckis | U.S"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
 
+                </LinearLayout>
 
-            </RelativeLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="10dip"
-            android:background="#FFB300" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFD49D"
+                    android:paddingLeft="12dp"
+                    android:drawableLeft="@drawable/tv_mypage"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="12dp"
+                    android:background="#FFBD9D"
+                    android:drawableLeft="@drawable/delete_mypage"/>
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:background="#FFB582"
+                />
+                <View
+                android:layout_width="7dp"
+                android:layout_height="20dip"
+                android:background="#704B37"
+                android:layout_marginLeft="15dp"
+                />
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="20dip"
+                    android:background="#704B37"
+                    android:layout_marginLeft="30dp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
                 android:background="@android:color/white">
 
                 <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitEnd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/mypage2"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center_vertical"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@+id/textView2"
-                    android:layout_toLeftOf="@+id/textView2"
-                    android:layout_toStartOf="@+id/textView2" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="The Lion King"
-                    android:textSize="37sp"
-                    android:layout_above="@+id/textView1"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lord of the Ring"
+                        android:textColor="#D9916A"
+                        android:textSize="19sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2003 | FANTASY,ACTION"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginStart="24dp"
-                    android:text="Whoopi Goldberg, Jeremy Irons, Matthew Broderick"
-                    android:textSize="10sp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/textView2"
-                    android:layout_alignStart="@+id/textView2"
-                    android:layout_marginBottom="57dp" />
-            </RelativeLayout>
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peter Jackson | New Zeland etc"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="10dip"
-            android:background="#FFB300" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFD49D"
+                    android:paddingLeft="12dp"
+                    android:drawableLeft="@drawable/tv_mypage"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="12dp"
+                    android:background="#FFBD9D"
+                    android:drawableLeft="@drawable/delete_mypage"/>
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_weight="1"
-                android:background="@android:color/white">
-
-                <ImageView
-                    android:id="@+id/breakfast"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/brak"
-                    android:layout_toRightOf="@+id/textView6"
-                    android:layout_toEndOf="@+id/textView6" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="The Breakfast Club"
-                    android:textSize="30sp"
-                    android:layout_above="@+id/textView6"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Judd Nelson, Molly Ringwald, Anthony Michael Hall"
-                    android:textSize="10sp"
-                    android:layout_marginBottom="59dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignRight="@+id/textView5"
-                    android:layout_alignEnd="@+id/textView5" />
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:background="#FFB582"
+                    />
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="20dip"
+                    android:background="#704B37"
+                    android:layout_marginLeft="15dp"
+                    />
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="20dip"
+                    android:background="#704B37"
+                    android:layout_marginLeft="30dp"
+                    />
             </RelativeLayout>
-        </LinearLayout>
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="10dip"
-            android:background="#FFB300" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
                 android:background="@android:color/white">
 
                 <ImageView
-                    android:id="@+id/nemo"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/nemo_png"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/textView8"
-                    android:layout_toEndOf="@+id/textView8" />
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mypage3"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center_vertical"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginStart="13dp"
-                    android:text="Finding Nemo"
-                    android:textSize="36sp" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="20dp"
-                    android:text="Ellen DeGeneres, Willem Dafoe, Eric Bana"
-                    android:textSize="12sp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/textView8"
-                    android:layout_alignStart="@+id/textView8"
-                    android:layout_marginBottom="60dp" />
-            </RelativeLayout>
-        </LinearLayout>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Breakfast Club"
+                        android:textColor="#D9916A"
+                        android:textSize="19sp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1985 | DRAMA,COMEDY"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="10dip"
-            android:background="#FFB300" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Hughes | U.S"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_weight="1"
-                android:background="@android:color/white">
+                </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/lordofring"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/textView10"
-                    android:layout_toRightOf="@+id/textView10"
-                    android:paddingTop="50dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ring" />
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FFD49D"
+                    android:paddingLeft="12dp"
+                    android:drawableLeft="@drawable/tv_mypage"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="12dp"
+                    android:background="#FFBD9D"
+                    android:drawableLeft="@drawable/delete_mypage"/>
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView9"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:text="The Lord of the Rings"
-                    android:textSize="26sp" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alan Howard, Novel Appleby, Sean Astin"
-                    android:textSize="12sp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_toLeftOf="@+id/lordofring"
-                    android:layout_toStartOf="@+id/lordofring"
-                    android:layout_marginBottom="58dp" />
-            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -301,12 +301,12 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="158dp">
+            android:layout_height="170dp">
 
             <ImageView
                 android:id="@+id/weather_image"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:layout_marginTop="30dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/weather"
@@ -327,39 +327,36 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:orientation="horizontal"
-            android:layout_marginTop="28dp">
+            android:layout_marginTop="10dp">
 
             <ImageView
-                android:layout_width="219dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/busan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/horror"
                 android:onClick="busan"
                 android:layout_marginRight="10dp"/>
 
             <ImageView
-                android:layout_width="228dp"
-                android:layout_height="150dp"
-                android:scaleType="fitStart"
-                android:src="@drawable/now_you_see_me"
-                android:onClick="now"/>
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/moved1"
+                android:onClick="now"
+                android:layout_marginRight="10dp" />
 
             <ImageView
-                android:layout_width="271dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/finding_dorry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sad_movie"
                 android:onClick="dorry"/>
-
-            <ImageView
-                android:layout_width="232dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/seondal"
-                android:onClick="bongi"/>
 
         </LinearLayout>
 

@@ -63,6 +63,11 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(this,main2.class);
         startActivity(intent);
     }
+    public void today_weather (View v)
+    {
+        Intent intent = new Intent(this,weather_rank.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

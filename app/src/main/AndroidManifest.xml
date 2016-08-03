@@ -24,6 +24,7 @@
         <activity android:name=".choosing_mood"></activity>
         <activity android:name=".sad_movie"></activity>
         <activity android:name=".happy_movie"></activity>
+        <activity android:name=".weather_rank"></activity>
 
     </application>
 

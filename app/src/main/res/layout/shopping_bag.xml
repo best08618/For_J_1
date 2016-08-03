@@ -17,43 +17,20 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/mark"
-                android:text=" 1"
-                android:textSize="50dp" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:layout_weight="1"
                 android:background="@android:color/white">
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_alignLeft="@+id/textView3"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignStart="@+id/textView3"
-                    android:layout_marginLeft="192dp"
-                    android:layout_marginStart="192dp"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/forrest_png" />
-
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginStart="18dp"
                     android:text="Forrest Gump"
                     android:textSize="37sp"
                     android:layout_above="@+id/textView3"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -65,6 +42,19 @@
                     android:layout_alignRight="@+id/textView4"
                     android:layout_alignEnd="@+id/textView4"
                     android:layout_marginBottom="56dp" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/mypage1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_toLeftOf="@+id/textView4"
+                    android:layout_toStartOf="@+id/textView4" />
+
+
 
             </RelativeLayout>
         </LinearLayout>
@@ -79,14 +69,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/mark2"
-                android:text=" 1"
-                android:textSize="50dp" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
@@ -97,25 +79,23 @@
                     android:id="@+id/imageView1"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_alignLeft="@+id/textView1"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_marginLeft="192dp"
-                    android:layout_marginStart="192dp"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/lionking_lion" />
+                    android:src="@drawable/mypage2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_toLeftOf="@+id/textView2"
+                    android:layout_toStartOf="@+id/textView2" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView1"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginStart="13dp"
                     android:text="The Lion King"
-                    android:textSize="37sp" />
+                    android:textSize="37sp"
+                    android:layout_above="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:id="@+id/textView1"
@@ -141,14 +121,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/mark3"
-                android:text=" 1"
-                android:textSize="50dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -197,14 +169,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/mark_gray"
-                android:text=" 1"
-                android:textSize="50dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -258,14 +222,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@drawable/mark_gray"
-                android:text=" 1"
-                android:textSize="50dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

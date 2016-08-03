@@ -1,6 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@android:color/white"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/forrest_png"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginLeft="192dp"
+            android:layout_marginStart="192dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forrest Gump"
+            android:textSize="37sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Tom Hanks, Kurt Russell, Sally Field"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4" />
+    </RelativeLayout>
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@android:color/darker_gray"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@android:color/white"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/lionking_lion"
+                android:id="@+id/imageView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignStart="@+id/textView1"
+                android:layout_marginLeft="192dp"
+                android:layout_marginStart="192dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Lion King"
+                android:textSize="37sp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Whoopi Goldberg, Jeremy Irons, Matthew Broderick"
+                android:id="@+id/textView1"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@android:color/white"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/brak"
+                android:id="@+id/breakfast"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginLeft="212dp"
+                android:layout_marginStart="212dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Lion King"
+                android:textSize="37sp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Whoopi Goldberg, Jeremy Irons, Matthew Broderick"
+                android:id="@+id/textView1"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2" />
+        </RelativeLayout>
 
 </LinearLayout>
+</ScrollView>

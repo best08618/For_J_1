@@ -14,11 +14,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:onClick="backbutton"
-                android:text="&lt;-" />
 
             <ImageButton
                 android:id="@+id/boosanhang_image_view"
@@ -41,10 +36,9 @@
                 <CheckBox
                     android:id="@+id/star_icon"
                     android:button="@android:color/transparent"
-                    android:background="@drawable/star"
+                    android:background="@drawable/starbutton"
                     android:textSize="0dp"
                     android:textColor="@android:color/white"
-
                     android:text="@null"
                     android:textOn="@null"
                     android:textOff="@null"
@@ -276,39 +270,39 @@
                     <ImageButton
                         android:layout_width="150dp"
                         android:layout_height="130dp"
-                        android:scaleType="centerCrop"
+                        android:scaleType="center"
                         android:layout_margin="4dp"
-                        android:src="@drawable/nowyouseeme2" />
+                        android:src="@drawable/worldwarz" />
                     <ImageButton
                         android:layout_width="150dp"
                         android:layout_height="130dp"
                         android:layout_margin="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/findingdory" />
+                        android:scaleType="center"
+                        android:src="@drawable/san" />
                     <ImageButton
                         android:layout_width="150dp"
                         android:layout_height="130dp"
-                        android:scaleType="centerCrop"
+                        android:scaleType="center"
                         android:layout_margin="4dp"
-                        android:src="@drawable/boosanhang" />
-                    <ImageButton
-                        android:layout_width="150dp"
-                        android:layout_height="130dp"
-                        android:layout_margin="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/nowyouseeme2" />
+                        android:src="@drawable/tomorrow" />
                     <ImageButton
                         android:layout_width="150dp"
                         android:layout_height="130dp"
                         android:layout_margin="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/boosanhang" />
+                        android:scaleType="center"
+                        android:src="@drawable/resident" />
                     <ImageButton
                         android:layout_width="150dp"
                         android:layout_height="130dp"
                         android:layout_margin="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/findingdory" />
+                        android:scaleType="center"
+                        android:src="@drawable/t2012" />
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="4dp"
+                        android:scaleType="center"
+                        android:src="@drawable/haewundae" />
 
                 </LinearLayout>
             </HorizontalScrollView>

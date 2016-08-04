@@ -132,7 +132,7 @@
                     android:layout_marginRight="5dp"
                     android:background="#FFD49D"
                     android:paddingLeft="12dp"
-                    android:drawableLeft="@drawable/tv_mypage"/>
+                    android:drawableLeft="@drawable/tv"/>
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
@@ -229,7 +229,7 @@
                     android:layout_marginRight="5dp"
                     android:background="#FFD49D"
                     android:paddingLeft="12dp"
-                    android:drawableLeft="@drawable/tv_mypage"/>
+                    android:drawableLeft="@drawable/tv"/>
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
@@ -327,7 +327,7 @@
                     android:layout_marginRight="5dp"
                     android:background="#FFD49D"
                     android:paddingLeft="12dp"
-                    android:drawableLeft="@drawable/tv_mypage"/>
+                    android:drawableLeft="@drawable/tv"/>
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="match_parent"

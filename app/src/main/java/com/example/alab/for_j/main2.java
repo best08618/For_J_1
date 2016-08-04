@@ -2,6 +2,7 @@ package com.example.alab.for_j;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -76,14 +77,15 @@ public class main2 extends AppCompatActivity {
         startActivityForResult(intent, 1);
 
     }
-
-
-
-    public void backbutton (View v)
+    public void boosanhang_trailor(View v)
     {
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
+        String url = "https://www.youtube.com/watch?v=UOTOjA0ngmk";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
+
+
     int numpeople=0;
     float sum= (float) 0.0;
     float realfinal=(float) 0.0;

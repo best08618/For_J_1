@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override
@@ -66,6 +68,12 @@ public class MainActivity extends AppCompatActivity
     public void today_weather (View v)
     {
         Intent intent = new Intent(this,weather_rank.class);
+        startActivity(intent);
+    }
+
+    public void nearby (View v)
+    {
+        Intent intent = new Intent(this,googleMap.MapsActivity.class);
         startActivity(intent);
     }
 
@@ -100,7 +108,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.history) {
             // Handle the camera action
         } else if (id == R.id.bag) {
-
+            Intent intent = new Intent(this,shopping_bag.class);
+            startActivity(intent);
         } else if (id == R.id.reservation) {
 
         } else if (id == R.id.point) {
@@ -114,5 +123,10 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void checkmovie (View v)
+    {
+        Intent intent = new Intent(this,shopping_bag.class);
+        startActivity(intent);
     }
 }

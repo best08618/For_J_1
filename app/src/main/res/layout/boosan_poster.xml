@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".main2">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,8 +36,7 @@
                 android:layout_alignParentRight="false"
                 android:layout_marginEnd="28dp"
                 android:layout_marginRight="0dp"
-                android:onClick="sadcontent"
-                android:background="@drawable/roundbutton"
+
                 android:text="*"
                 android:textColor="@android:color/white" />
 
